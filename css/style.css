@@ -1,0 +1,473 @@
+/* ===============================================
+
+MODERETRO - eCommerce Project
+
+'style.css' - containing all the styling for 
+index, product_page, login_page and checkout_page.
+
+%% Content: 
+  - Initial settings,
+  - Header and Footer design,
+  - Index page,
+  - Login page,
+  - Checkout page,
+  - Product page
+
+%% Tips:
+ # When searching for @media, use "--" followed by 
+   section name inside the search bar.
+
+================================================= */
+
+/* Variables: */
+:root {
+
+    /* Colors: */
+    --background-color: #ececec;
+    --box-background-color: #e2e2e2;
+    --primary-color: #1e1e1e;
+    --secondary-color: #d2d2d2;
+    --tertiary-color: #878787;
+    --accent-color1: #003296;
+    --accent-color2: #dbb658;
+
+    /* Shaping: */
+    --radius-px: 17.54px;
+    --border-px: 1.92px;
+    --border-inputs: 0.82px;
+    --border-buttons: 2.21px;
+
+    /* Fonts: */
+    --main-font: 'Yeseva One';
+    --secondary-font: 'Raleway';
+}
+
+/* Initial settings: */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-smoothing: grayscale;
+
+    letter-spacing: 0.04rem;
+}
+html {
+    font-size: 62.5%;
+    background-color: var(--background-color);
+}
+main {
+    min-height: 88vh;
+}
+h1 {
+    font-family: var(--main-font), serif;
+}
+h2, h3, p {
+    font-family: var(--secondary-font), sans-serif;
+}
+ul li {
+    list-style-type: none;
+}
+a {
+    /* display: block; */
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: var(--secondary-font);
+}
+label {
+    font-family: var(--secondary-font), sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+input, select {
+    font-family: var(--secondary-font), sans-serif;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    padding: 0.8rem 1rem;
+    border: var(--border-inputs) solid var(--primary-color);
+    border-radius: var(--radius-px);
+}
+button, .btn-1 {
+    border-radius: var(--radius-px);
+    border: none;
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    padding: 0.8rem 1rem;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+button:hover {
+    color: var(--accent-color2);
+    background-color: var(--accent-color1);
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+.sep {
+    /* Custom separator, used with divs: */
+    display: block;
+    border: 1.1px solid var(--accent-color2);
+    width: 70%;
+    height: auto;
+    margin: 0.8rem auto;
+}
+
+/* =========================
+   HEADER AND FOOTER DESIGN:
+ =========================== */
+
+/* Header: */
+.header {
+    background-color: var(--secondary-color);
+}
+/* Header - Logo: */
+.header-logo {
+    display: block;
+    margin: 2rem auto;
+    max-width: 50%;
+    height: auto;
+}
+/* Header-nav: */
+.header-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.3rem;
+}
+.header-nav-link {
+    display: block;
+    font-family: var(--main-font);
+    font-size: 1.8rem;
+    transition: transform .2s ease-in-out;
+}
+.header-nav-link:hover {
+    color: var(--accent-color1);
+    transform: scale(1.1);
+}
+/* Header - Search: */
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 1rem auto;
+}
+.search-field {
+    max-width: 100%;
+    min-width: 260px;
+}
+/* Header - Icons: */
+.header-icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.header-icon {
+    width: 50px;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+.header-icon:hover {
+    color: var(--accent-color1);
+    transition: .2s ease-in-out;
+}
+
+/* Footer: */
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+/* Footer - Init message: */
+.footer-msg {
+    text-align: center;
+    font-family: var(--main-font), serif;
+    font-size: 2rem;
+}
+/* Footer - Navigation: */
+.footer-title {
+    font-family: var(--main-font), serif;
+    font-size: 1.6rem;
+}
+.footer-links {
+    font-family: var(--secondary-font), serif;
+    text-align: center;
+}
+.footer-links ul li {
+    margin: 0.8rem;
+}
+.footer-links ul li a {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.footer-links ul li a:hover {
+    color: var(--accent-color1);
+    transition: .2 ease-in-out;
+}
+/* Social and &copy: */
+.footer-soc-link {
+    cursor: pointer;
+    color: var(--primary-color);
+}
+.footer-copyright-msg {
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+}
+
+/* -- Header-Footer media: */
+@media screen and (min-width: 992px){
+    .header-logo {
+        max-width: 100%;
+    }
+    .footer-msg {
+        text-align: left;
+    }
+}
+/* -- Header-Footer smallest screen fixes: */
+@media screen and (max-width: 320px) {
+    .search-field {
+        min-width: 230px;
+    }
+}
+
+/* ===========
+   INDEX PAGE:
+ ============= */
+
+/* Main: */
+.index-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+/* Logo: */
+.main-logo {
+    display: flex;
+    margin: 1.2rem;
+    margin-bottom: 3rem;
+}
+.main-logo img {
+    width: 100%;
+    height: auto;
+    padding: 1.2rem;
+}
+
+/* Moto: */
+.moto-msg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem;
+    margin-bottom: 4rem;
+    width: 99%;
+    background-color: var(--primary-color);
+    box-shadow: 0 12px 20px 1.2px var(--tertiary-color);
+    border-radius: var(--radius-px);
+}
+.moto-msg-h1 {
+    font-size: 5rem;
+    text-align: center;
+    color: var(--secondary-color); /* secondary color */
+}
+.moto-msg-h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 1rem auto;
+    color: var(--secondary-color); /* secondary color */
+}
+
+/* Nav: */
+.index-nav {
+    display: flex;
+    flex: 0;
+    justify-content: center;
+    text-align: center;
+    padding: 1.2rem;
+}
+.index-nav li {
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+.index-nav-link {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: var(--main-font), serif;
+    font-size: 3rem;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform .3s ease-in-out
+}
+.index-nav-link:hover {
+    transform: scale(1.1);
+}
+.footer-index {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+/* -- Index page media: */
+@media screen and (min-width: 992px) {
+    .main-logo {
+        scale: 1.2;
+        margin-bottom: 5rem;
+    }   
+}
+
+/* ===========
+   LOGIN PAGE:
+ ============= */
+
+/* Main layout */
+.login-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Title: */
+.login-title {
+    margin-top: -5rem;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 5rem;
+}
+/* Login field content: */
+.login-field {
+    padding: 2rem 2rem;
+    box-shadow: 0 12px 20px 1.2px var(--tertiary-color);
+    background-color: var(--box-background-color);
+    border: var(--border-px) solid var(--accent-color2);
+    border-radius: var(--radius-px);
+}
+.login-input {
+    margin: 1rem auto;
+}
+.login-input label {
+    margin: auto 0.5rem;
+}
+.login-field-input {
+    width: 100%;
+}
+.password-opt {
+    display: flex;
+    flex-wrap: 1;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 3rem auto;
+}
+.fgt-psw a {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.fgt-psw a:hover {
+    color: var(--accent-color1);
+}
+.login-btn {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1.2rem;
+    margin: 1rem auto;
+}
+.create-acc {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 3rem auto;
+}
+.create-acc a:hover {
+    color: var(--accent-color1);
+}
+
+/* -- Login page media: */
+@media screen and (min-width: 992px) {
+    .login-field {
+        padding: 2rem 4rem;
+    }
+    .password-opt {
+        justify-content: space-around;
+    }
+}
+
+/* ==============
+   CHECKOUT PAGE:
+ ================ */
+
+/* Main layout: */
+/* Information: */
+.checkout-main h2 {
+    font-size: 2rem;
+    margin-top: 1.2rem;
+    padding: 1rem;
+}
+.info-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 1rem;
+    border: var(--border-px) solid var(--accent-color2);
+    border-radius: var(--radius-px);
+    background-color: var(--box-background-color);
+}
+.info-field label {
+    margin: auto 0.5rem;
+}
+/* Setup of just "names" part: */
+.name-input {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+}
+.name-input input {
+    width: 100%;
+}
+/* Rest of the fields: */
+.input-field {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+/* Dropdown menu parts: */
+.dropdowns {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.ddn {
+    display: flex;
+    flex-direction: column;
+}
+/* Payment part: */
+.payment-btns {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.btn-pay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    border: var(--border-buttons) solid var(--primary-color);
+    width: 88%;
+}
+.btn-pay:hover {
+    background-color: var(--accent-color2);
+}
+.finish-button button {
+    margin-top: 3rem;
+}
+
+/* -- Checkout page media: */
+@media screen and (max-width: 991px) {
+    .shipping-info, .payment-info {
+        margin: auto !important;
+    }
+    
+}

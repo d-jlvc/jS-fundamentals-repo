@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Unique luxury Casio modifications for those who stand out. Crafted with passion, worn with pride.">
+    <meta name="author" content="d-jlvc">
+    <!-- Title: -->
+    <title>Moderetro | Checkout</title>
+    <!-- Links: -->
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Fonts: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap&family=Raleway:ital,wght@0,100..900;1,100..900" rel="stylesheet">
+    <!-- Favicon: -->
+    <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/svg">
+</head>
+<body>
+    <!-- Header: -->
+    <header class="container header">
+        <div class="row align-items-center justify-content-lg-between">
+            <!-- Header logo: -->
+            <div class="col-12 d-block d-lg-none">
+                <a href="index.html"><img class="header-logo" src="assets/images/moderetro-logo.svg" alt="Company logo"></a>
+            </div>
+            <div class="col-lg-2 d-none d-lg-block">
+                <a href="index.html"><img class="header-logo" src="assets/images/moderetro-top.svg" alt="Company logo"></a>
+            </div>
+            <!-- Header navigation: -->
+            <div class="col-12 col-lg-3">
+                <nav class="header-nav">
+                    <ul>
+                        <li><a class="header-nav-link" href="index.html" target="_blank">Home</a></li>
+                        <li><a class="header-nav-link" href="page-product.html" target="_blank">Shop</a></li>
+                        <li><a class="header-nav-link" href="#" target="_blank">Gallery</a></li>
+                        <li><a class="header-nav-link" href="#" target="_blank">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Search bar: -->
+            <div class="search-bar col-12 col-lg-5">
+                <form action="#" method="get">
+                    <input class="search-field" type="search" 
+                    name="q" id="search-action" 
+                    placeholder="Search here...">
+                    <button class="buttons" type="submit">Search</button>
+                </form>
+            </div>
+            <!-- Header icons: -->
+            <div class="header-icons col-12 col-lg-2">
+                <a href="./page-checkout.html">
+                    <svg class="header-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                </a>
+                <a href="./page-login.html">
+                    <svg class="header-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Separator -->
+    <div class="sep"></div>
+
+    <!-- Main content: -->
+    <main class="container checkout-main">
+
+        <!-- ROW FOR BOTH CHECKOUT FIELDS:
+        SHIPPING AND PAYMENT -->
+        <div class="row flex-column mb-5">
+
+                <!-- Shipping and Payment Form: -->
+                <form action="" method="post">
+
+                <!-- SHIPPING FIELD: -->
+                <div class="shipping-info col-12 col-md-9 col-lg-5">
+                    <!-- Title: -->
+                    <h2>Shipping information</h2>
+                    <!-- Shipping info field: -->
+                    <div class="info-field">
+                        <!-- User name and surname div: -->
+                        <div class="name-input">
+                            <!-- Name: -->
+                            <label class="">
+                                First name:
+                                <input class="input-field" type="text" 
+                                name="first-name" id="first-name" required>
+                            </label>
+                            <!-- Surname: -->
+                            <label class="">
+                                Last name:
+                                <input class="input-field" type="text" 
+                                name="last-name" id="last-name" required>
+                            </label>
+                        </div>
+                        <!-- Address: -->
+                        <label>
+                            Address:
+                            <input class="input-field" type="text" 
+                            name="address" id="address" required>
+                        </label>
+                        <!-- Appt/Suit/Etc: -->
+                        <label>
+                            Appartment/Suite/Etc.:
+                            <input class="input-field" type="text" 
+                            name="appt-etc" id="appt-etc">
+                        </label>
+
+                        <!-- Dropdown info: -->
+                        <div class="dropdowns">
+                            <!-- Country dropdown: -->
+                            <div class="ddn col-3">
+                                <label for="country">Country</label>
+                                <select class="ddown" name="country" id="country" required>
+                                    <option value=""></option>
+                                    <option value="country-1">Serbia</option>
+                                    <option value="country-2">Montenegro</option>
+                                    <option value="country-3">Croatia</option>
+                                    <option value="country-4">Bosnia and Herzegovina</option>
+                                    <option value="country-5">North Macedonia</option>
+                                    <option value="country-6">Romania</option>
+                                </select>
+                            </div>
+                            <!-- City dropdown: -->
+                            <div class="ddn col-3">
+                                <label for="city">City</label>
+                                <select class="ddown" name="city" id="city" required>
+                                    <option value=""></option>
+                                    <option value="city-1">Belgrade</option>
+                                    <option value="city-2">Podgorica</option>
+                                    <option value="city-3">Zagreb</option>
+                                    <option value="city-4">Sarajevo</option>
+                                    <option value="city-5">Skopje</option>
+                                    <option value="city-6">Bucharest</option>
+                                </select>
+                            </div>
+                            <!-- Zipcode dropdown: -->
+                            <div class="ddn col-3">
+                                <label for="zipcode">Zipcode</label>
+                                <select class="ddown" name="zipcode" id="zipcode" required>
+                                    <option value=""></option>
+                                    <option value="country-1">11000</option>
+                                    <option value="country-2">22000</option>
+                                    <option value="country-3">33000</option>
+                                    <option value="country-4">44000</option>
+                                    <option value="country-5">55000</option>
+                                    <option value="country-6">66000</option>
+                                </select>
+                            </div>
+                        </div> <!-- DROPDOWNS CLOSED!!! -->
+                    </div> <!-- INFO FIELD CLOSED!!! -->
+                </div> <!-- SHIPPING INFO CLOSED !!! -->
+
+                <!-- PAYMENT FIELD: -->
+                <div class="payment-info col-12 col-md-9 col-lg-5">
+                    <!-- Title: -->
+                    <h2>Payment information</h2>
+                    <!-- Payment info field: -->
+                    <div class="info-field">
+                        <!-- Buttons div: -->
+                        <div class="payment-btns">
+                            <a class="btn-1 btn-pay" href="https://paypal.com" target="_blank">
+                                <img src="assets/images/icon-paypal.png" alt="">
+                            </a>
+                            <a class="btn-1 btn-pay" href="#" target="_blank">
+                                <img src="assets/images/icon-cash.png" alt="">
+                            </a>
+                        </div>
+                        <!-- Cardholder name: -->
+                        <label>
+                            Cardholder name:
+                            <input class="input-field" type="text" 
+                            name="card-name" id="card-name"
+                            placeholder="E.g. John Johnson" required>
+                        </label>
+                        <!-- Card number: -->
+                        <label>
+                            Card number:
+                            <input class="input-field" type="text" 
+                            name="card-number" id="card-number"
+                            placeholder="xxxx xxxx xxxx xxxx" required>
+                        </label>
+
+                        <!-- Dropdown payment info: -->
+                        <div class="dropdowns">
+                            <!-- Month dropdown: -->
+                            <div class="ddn col-3">
+                                <label for="card-month">Month</label>
+                                <select class="ddown" name="card-month" id="card-month" required>
+                                    <option value=""></option>
+                                    <option value="1">Jan</option>
+                                    <option value="2">Feb</option>
+                                    <option value="3">Mar</option>
+                                    <option value="4">Apr</option>
+                                    <option value="5">May</option>
+                                    <option value="6">Jun</option>
+                                    <option value="7">Jul</option>
+                                    <option value="8">Aug</option>
+                                    <option value="9">Sep</option>
+                                    <option value="10">Oct</option>
+                                    <option value="11">Nov</option>
+                                    <option value="12">Dec</option>
+                                </select>
+                            </div>
+                            <!-- Year dropdown: -->
+                            <div class="ddn col-3">
+                                <label for="card-year">Year</label>
+                                <select class="ddown" name="card-year" id="card-year" required>
+                                    <option value=""></option>
+                                    <option value="25">2025</option>
+                                    <option value="26">2026</option>
+                                    <option value="27">2027</option>
+                                    <option value="28">2028</option>
+                                    <option value="29">2029</option>
+                                    <option value="30">2030</option>
+                                </select>
+                            </div>
+                            <!-- CVV Input: -->
+                            <div class="ddn col-3">
+                                <label for="zipcode">CVV</label>
+                                <input type="text" name="card-cvv" id="card-cvv" 
+                                placeholder="E.g. 042" required>
+                            </div>
+                        </div> <!-- DROPDOWNS CLOSED!!! -->
+
+                        <!-- PAY Btn: -->
+                        <div class="finish-button">
+                            <button class="login-btn" type="submit">Pay</button>
+                        </div>
+                
+                    </div> <!-- PAYMENT INFO FIELD CLOSED!!! -->
+                </div>  <!-- PAYMENT CLOSED!!! --> 
+            </form> <!-- FORM CLOSED!!! -->        
+        </div> <!-- SHIPPING AND PAYMENT ROW CLOSED!!! --> 
+    </main>
+    
+    <!-- Footer &copy;: -->
+    <footer class="container footer">
+        <!-- Footer nav: -->
+            <div class="row p-2 mt-2 mt-lg-4 justify-content-around">
+                <!-- Footer message: -->
+                <div class="col-12 col-md-8 col-lg-3 mb-4">
+                    <h2 class="footer-msg">
+                        Unique luxury Casio modifications for those who stand out. 
+                        Crafted with passion, worn with pride.
+                    </h2>
+                </div>
+
+                <!-- Separator: -->
+                <div class="sep d-lg-none"></div>
+                <!-- SHOP Section: -->
+                <div class="footer-links col-12 col-lg-2 mt-4 mt-lg-0 ">
+                    <h3 class="footer-title">Shop</h3>
+                    <ul>
+                        <li><a href="#">All watches</a></li>
+                        <li><a href="#">Regular Mods</a></li>
+                        <li><a href="#">Premium Mods</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                <!-- ABOUT Section: -->
+                <div class="footer-links col-12 col-lg-2 mt-3 mt-lg-0">
+                    <h3 class="footer-title">About</h3>
+                    <ul>
+                        <li><a href="#">Our idea</a></li>
+                        <li><a href="#">Our materials</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <!-- FAQ Section: -->
+                <div class="footer-links col-12 col-lg-2 mt-3 mt-lg-0">
+                    <h3 class="footer-title">FAQ</h3>
+                    <ul>
+                        <li><a href="#">Return policy</a></li>
+                        <li><a href="#">Refund policy</a></li>
+                        <li><a href="#">Shipping questions</a></li>
+                        <li><a href="#">More product details</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <!-- Separator: -->
+        <div class="sep"></div>
+        <!-- Social media: -->
+        <div class="footer-social-media">
+            <a class="footer-soc-link" href="https://facebook.com" target="_blank"">
+                <img src="assets/images/icon-facebook.svg" alt="Facebook link">
+            </a>
+            <a class="footer-soc-link" href="https://instagram.com" target="_blank">
+                <img src="assets/images/icon-instagram.svg" alt="Instagram link">
+            </a>
+            <a class="footer-soc-link" href="https://tiktok.com" target="_blank">
+                <img src="assets/images/icon-tiktok.svg" alt="Tiktok link">
+            </a>
+        </div>
+        <!-- Copyright msg: -->
+        <p class="footer-copyright-msg">&copy;All rights reserved. Developed by <a class="footer-soc-link" href="https://github.com/d-jlvc" target="_blank">j-lvc</a>.</p>
+    </footer>
+
+    <!-- Bootstrap jS import: -->
+    <script src="./scripts/bootstrap.bundle.min.js"></script>
+</body>
+</html>

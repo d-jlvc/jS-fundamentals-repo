@@ -1,12 +1,19 @@
 ### --3. Design:
 
 ```
+    # Color palette:
+    --background-color: #ececec;
+    --box-background-color: #e2e2e2;
+    --primary-color: #1e1e1e;
+    --secondary-color: #d2d2d2;
+    --tertiary-color: #878787;
+    --accent-color1: #003296;
+    --accent-color2: #dbb658;
+    
     # Font choice:
     --main: Yeseva One
     --side: Raleway
-    
-    # Color palette:
-    
+
 ```
 ### --4. Personals:
 
