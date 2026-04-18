@@ -68,175 +68,311 @@
     <div class="sep"></div>
 
     <!-- Main content: -->
-    <main class="container checkout-main">
+    <main class="container main">
 
-        <!-- ROW FOR BOTH CHECKOUT FIELDS:
-        SHIPPING AND PAYMENT -->
-        <div class="row flex-column mb-5">
+        <!-- Main title: -->
+        <h1 class="main-title">Checkout</h1>
+
+        <!-- MAIN ROW!!! -->
+        <div class="row flex-row align-items-start justify-content-between">
+
+            <!-- SHIPPING AND PAYMENT container -->
+            <div class="container flex-column
+                order-2 order-md-2 order-lg-1
+                col-12 col-md-9 col-lg-5 centered">
 
                 <!-- Shipping and Payment Form: -->
-                <form action="" method="post">
+                <form action="#" method="post">
 
-                <!-- SHIPPING FIELD: -->
-                <div class="shipping-info col-12 col-md-9 col-lg-5">
-                    <!-- Title: -->
-                    <h2>Shipping information</h2>
-                    <!-- Shipping info field: -->
-                    <div class="info-field">
-                        <!-- User name and surname div: -->
-                        <div class="name-input">
-                            <!-- Name: -->
-                            <label class="">
-                                First name:
+                    <!-- SHIPPING FIELD: -->
+                    <div class="shipping-info col-12 col-md-9 col-lg-10">
+                        <!-- Title: -->
+                        <h2>Shipping information</h2>
+                        <!-- Shipping info field: -->
+                        <div class="info-field">
+                            <!-- User name and surname div: -->
+                            <div class="name-input">
+                                <!-- Name: -->
+                                <label class="">
+                                    First name:
+                                    <input class="input-field" type="text" 
+                                    name="first-name" id="first-name" required>
+                                </label>
+                                <!-- Surname: -->
+                                <label class="">
+                                    Last name:
+                                    <input class="input-field" type="text" 
+                                    name="last-name" id="last-name" required>
+                                </label>
+                            </div>
+                            <!-- Address: -->
+                            <label>
+                                Address:
                                 <input class="input-field" type="text" 
-                                name="first-name" id="first-name" required>
+                                name="address" id="address" required>
                             </label>
-                            <!-- Surname: -->
-                            <label class="">
-                                Last name:
+                            <!-- Appt/Suit/Etc: -->
+                            <label>
+                                Appartment/Suite/Etc.:
                                 <input class="input-field" type="text" 
-                                name="last-name" id="last-name" required>
+                                name="appt-etc" id="appt-etc">
                             </label>
-                        </div>
-                        <!-- Address: -->
-                        <label>
-                            Address:
-                            <input class="input-field" type="text" 
-                            name="address" id="address" required>
-                        </label>
-                        <!-- Appt/Suit/Etc: -->
-                        <label>
-                            Appartment/Suite/Etc.:
-                            <input class="input-field" type="text" 
-                            name="appt-etc" id="appt-etc">
-                        </label>
 
-                        <!-- Dropdown info: -->
-                        <div class="dropdowns">
-                            <!-- Country dropdown: -->
-                            <div class="ddn col-3">
-                                <label for="country">Country</label>
-                                <select class="ddown" name="country" id="country" required>
-                                    <option value=""></option>
-                                    <option value="country-1">Serbia</option>
-                                    <option value="country-2">Montenegro</option>
-                                    <option value="country-3">Croatia</option>
-                                    <option value="country-4">Bosnia and Herzegovina</option>
-                                    <option value="country-5">North Macedonia</option>
-                                    <option value="country-6">Romania</option>
-                                </select>
-                            </div>
-                            <!-- City dropdown: -->
-                            <div class="ddn col-3">
-                                <label for="city">City</label>
-                                <select class="ddown" name="city" id="city" required>
-                                    <option value=""></option>
-                                    <option value="city-1">Belgrade</option>
-                                    <option value="city-2">Podgorica</option>
-                                    <option value="city-3">Zagreb</option>
-                                    <option value="city-4">Sarajevo</option>
-                                    <option value="city-5">Skopje</option>
-                                    <option value="city-6">Bucharest</option>
-                                </select>
-                            </div>
-                            <!-- Zipcode dropdown: -->
-                            <div class="ddn col-3">
-                                <label for="zipcode">Zipcode</label>
-                                <select class="ddown" name="zipcode" id="zipcode" required>
-                                    <option value=""></option>
-                                    <option value="country-1">11000</option>
-                                    <option value="country-2">22000</option>
-                                    <option value="country-3">33000</option>
-                                    <option value="country-4">44000</option>
-                                    <option value="country-5">55000</option>
-                                    <option value="country-6">66000</option>
-                                </select>
-                            </div>
-                        </div> <!-- DROPDOWNS CLOSED!!! -->
-                    </div> <!-- INFO FIELD CLOSED!!! -->
-                </div> <!-- SHIPPING INFO CLOSED !!! -->
+                            <!-- Dropdown info: -->
+                            <div class="dropdowns">
+                                <!-- Country dropdown: -->
+                                <div class="ddn col-3">
+                                    <label for="country">Country</label>
+                                    <select class="ddown" name="country" id="country" required>
+                                        <option value=""></option>
+                                        <option value="country-1">Serbia</option>
+                                        <option value="country-2">Montenegro</option>
+                                        <option value="country-3">Croatia</option>
+                                        <option value="country-4">Bosnia and Herzegovina</option>
+                                        <option value="country-5">North Macedonia</option>
+                                        <option value="country-6">Romania</option>
+                                    </select>
+                                </div>
+                                <!-- City dropdown: -->
+                                <div class="ddn col-3">
+                                    <label for="city">City</label>
+                                    <select class="ddown" name="city" id="city" required>
+                                        <option value=""></option>
+                                        <option value="city-1">Belgrade</option>
+                                        <option value="city-2">Podgorica</option>
+                                        <option value="city-3">Zagreb</option>
+                                        <option value="city-4">Sarajevo</option>
+                                        <option value="city-5">Skopje</option>
+                                        <option value="city-6">Bucharest</option>
+                                    </select>
+                                </div>
+                                <!-- Zipcode dropdown: -->
+                                <div class="ddn col-3">
+                                    <label for="zipcode">Zipcode</label>
+                                    <select class="ddown" name="zipcode" id="zipcode" required>
+                                        <option value=""></option>
+                                        <option value="country-1">11000</option>
+                                        <option value="country-2">22000</option>
+                                        <option value="country-3">33000</option>
+                                        <option value="country-4">44000</option>
+                                        <option value="country-5">55000</option>
+                                        <option value="country-6">66000</option>
+                                    </select>
+                                </div>
+                            </div> <!-- DROPDOWNS CLOSED!!! -->
+                        </div> <!-- INFO FIELD CLOSED!!! -->
+                    </div> <!-- SHIPPING INFO CLOSED !!! -->
 
-                <!-- PAYMENT FIELD: -->
-                <div class="payment-info col-12 col-md-9 col-lg-5">
+                    <!-- PAYMENT FIELD: -->
+                    <div class="payment-info col-12 col-md-9 col-lg-10">
+                        <!-- Title: -->
+                        <h2>Payment information</h2>
+                        <!-- Payment info field: -->
+                        <div class="info-field">
+                            <!-- Buttons div: -->
+                            <div class="payment-btns">
+                                <a class="btn-1 btn-pay" href="https://paypal.com" target="_blank">
+                                    <img src="assets/images/icon-paypal.png" alt="">
+                                </a>
+                                <a class="btn-1 btn-pay" href="#" target="_blank">
+                                    <img src="assets/images/icon-cash.png" alt="">
+                                </a>
+                            </div>
+                            <!-- Cardholder name: -->
+                            <label>
+                                Cardholder name:
+                                <input class="input-field" type="text" 
+                                name="card-name" id="card-name"
+                                placeholder="E.g. John Johnson" required>
+                            </label>
+                            <!-- Card number: -->
+                            <label>
+                                Card number:
+                                <input class="input-field" type="text" 
+                                name="card-number" id="card-number"
+                                placeholder="xxxx xxxx xxxx xxxx" required>
+                            </label>
+
+                            <!-- Dropdown payment info: -->
+                            <div class="dropdowns">
+                                <!-- Month dropdown: -->
+                                <div class="ddn col-3">
+                                    <label for="card-month">Month</label>
+                                    <select class="ddown" name="card-month" id="card-month" required>
+                                        <option value=""></option>
+                                        <option value="1">Jan</option>
+                                        <option value="2">Feb</option>
+                                        <option value="3">Mar</option>
+                                        <option value="4">Apr</option>
+                                        <option value="5">May</option>
+                                        <option value="6">Jun</option>
+                                        <option value="7">Jul</option>
+                                        <option value="8">Aug</option>
+                                        <option value="9">Sep</option>
+                                        <option value="10">Oct</option>
+                                        <option value="11">Nov</option>
+                                        <option value="12">Dec</option>
+                                    </select>
+                                </div>
+                                <!-- Year dropdown: -->
+                                <div class="ddn col-3">
+                                    <label for="card-year">Year</label>
+                                    <select class="ddown" name="card-year" id="card-year" required>
+                                        <option value=""></option>
+                                        <option value="25">2025</option>
+                                        <option value="26">2026</option>
+                                        <option value="27">2027</option>
+                                        <option value="28">2028</option>
+                                        <option value="29">2029</option>
+                                        <option value="30">2030</option>
+                                    </select>
+                                </div>
+                                <!-- CVV Input: -->
+                                <div class="ddn col-3">
+                                    <label for="zipcode">CVV</label>
+                                    <input type="text" name="card-cvv" id="card-cvv" 
+                                    placeholder="E.g. 042" required>
+                                </div>
+                            </div> <!-- DROPDOWNS CLOSED!!! -->
+
+                            <!-- PAY Btn: -->
+                            <div class="finish-button">
+                                <button class="login-btn" type="submit">Pay</button>
+                            </div>
+                    
+                        </div> <!-- PAYMENT INFO FIELD CLOSED!!! -->
+                    </div>  <!-- PAYMENT CLOSED!!! --> 
+                </form> <!-- FORM CLOSED!!! -->        
+            </div> <!-- SHIPPING AND PAYMENT CONTAINER CLOSED!!! --> 
+
+            <!-- CONTAINER FOR THE PRODUCT OVERVIEW: -->
+            <div class="container flex-column
+                order-1 order-md-1 order-lg-2
+                col-12 col-md-9 col-lg-5 position-fix
+                right-text">
+
+                <!-- Cart field: DIV ONLY FOR SPACE USED BY CART -->
+                <div class="product-info align-items-end 
+                    col-12 col-md-9 col-lg-9">
                     <!-- Title: -->
-                    <h2>Payment information</h2>
-                    <!-- Payment info field: -->
-                    <div class="info-field">
-                        <!-- Buttons div: -->
-                        <div class="payment-btns">
-                            <a class="btn-1 btn-pay" href="https://paypal.com" target="_blank">
-                                <img src="assets/images/icon-paypal.png" alt="">
-                            </a>
-                            <a class="btn-1 btn-pay" href="#" target="_blank">
-                                <img src="assets/images/icon-cash.png" alt="">
-                            </a>
-                        </div>
-                        <!-- Cardholder name: -->
-                        <label>
-                            Cardholder name:
-                            <input class="input-field" type="text" 
-                            name="card-name" id="card-name"
-                            placeholder="E.g. John Johnson" required>
-                        </label>
-                        <!-- Card number: -->
-                        <label>
-                            Card number:
-                            <input class="input-field" type="text" 
-                            name="card-number" id="card-number"
-                            placeholder="xxxx xxxx xxxx xxxx" required>
-                        </label>
+                    <h2 class="chechout-main">Cart review</h2>
+                    <!-- Field with products: -->
+                    <div class="info-field products-info-field">
+                        <!-- Procuct#1 -->
+                        <div class="product-field">
+                            <!-- Product image: -->
+                            <div class="product-image">
+                                <img src="assets/images/casio-blue.jpeg" alt="Product-Casio-Blue">
+                            </div>
+                            <!-- Product details: -->
+                            <div class="product-details">
+                                <p class="product-title">Casio Royale AE1200</p>
+                                <p class="subtitle-title">Royal Blue Mod</p>
+                            </div>
+                            <!-- Product price and quantity: -->
+                            <div class="product-price-quant">
+                                <p class="price">$199</p>
+                                <!-- + & - -->
+                                <div class="product-quantity">
+                                    <button class="quant-btn" id="plus-btn">+</button>
+                                    <input type="number" name="quantity" id="product-quantity" value="1">
+                                    <button class="quant-btn" id="minus-btn">-</button>
+                                </div>
+                            </div>
+                        </div> <!-- Product#1 CLOSED !!! -->
 
-                        <!-- Dropdown payment info: -->
-                        <div class="dropdowns">
-                            <!-- Month dropdown: -->
-                            <div class="ddn col-3">
-                                <label for="card-month">Month</label>
-                                <select class="ddown" name="card-month" id="card-month" required>
-                                    <option value=""></option>
-                                    <option value="1">Jan</option>
-                                    <option value="2">Feb</option>
-                                    <option value="3">Mar</option>
-                                    <option value="4">Apr</option>
-                                    <option value="5">May</option>
-                                    <option value="6">Jun</option>
-                                    <option value="7">Jul</option>
-                                    <option value="8">Aug</option>
-                                    <option value="9">Sep</option>
-                                    <option value="10">Oct</option>
-                                    <option value="11">Nov</option>
-                                    <option value="12">Dec</option>
-                                </select>
-                            </div>
-                            <!-- Year dropdown: -->
-                            <div class="ddn col-3">
-                                <label for="card-year">Year</label>
-                                <select class="ddown" name="card-year" id="card-year" required>
-                                    <option value=""></option>
-                                    <option value="25">2025</option>
-                                    <option value="26">2026</option>
-                                    <option value="27">2027</option>
-                                    <option value="28">2028</option>
-                                    <option value="29">2029</option>
-                                    <option value="30">2030</option>
-                                </select>
-                            </div>
-                            <!-- CVV Input: -->
-                            <div class="ddn col-3">
-                                <label for="zipcode">CVV</label>
-                                <input type="text" name="card-cvv" id="card-cvv" 
-                                placeholder="E.g. 042" required>
-                            </div>
-                        </div> <!-- DROPDOWNS CLOSED!!! -->
+                        <!-- Separate products: -->
+                        <div class="sep"></div>
 
-                        <!-- PAY Btn: -->
-                        <div class="finish-button">
-                            <button class="login-btn" type="submit">Pay</button>
+                        <!-- Procuct#2 -->
+                        <div class="product-field">
+                            <!-- Product image: -->
+                            <div class="product-image">
+                                <img src="assets/images/casio-orange.jpeg" alt="Product-Casio-Orange">
+                            </div>
+                            <!-- Product details: -->
+                            <div class="product-details">
+                                <p class="product-title">Casio Royale AE1200</p>
+                                <p class="subtitle-title">NASA Space Mod</p>
+                            </div>
+                            <!-- Product price and quantity: -->
+                            <div class="product-price-quant">
+                                <p class="price">$199</p>
+                                <!-- + & - -->
+                                <div class="product-quantity">
+                                    <button class="quant-btn" id="plus-btn">+</button>
+                                    <input type="number" name="quantity" id="product-quantity" value="1">
+                                    <button class="quant-btn" id="minus-btn">-</button>
+                                </div>
+                            </div>
+                        </div> <!-- Product#2 CLOSED !!! -->
+
+                        <!-- Separate products: -->
+                        <div class="sep"></div>
+
+                        <!-- Procuct#3 -->
+                        <div class="product-field">
+                            <!-- Product image: -->
+                            <div class="product-image">
+                                <img src="assets/images/casio-green.jpeg" alt="Product-Casio-Green">
+                            </div>
+                            <!-- Product details: -->
+                            <div class="product-details">
+                                <p class="product-title">Casio Royale AE1200</p>
+                                <p class="subtitle-title">Sherwood Green Mod</p>
+                            </div>
+                            <!-- Product price and quantity: -->
+                            <div class="product-price-quant">
+                                <p class="price">$199</p>
+                                <!-- + & - -->
+                                <div class="product-quantity">
+                                    <button class="quant-btn" id="plus-btn">+</button>
+                                    <input type="number" name="quantity" id="product-quantity" value="1">
+                                    <button class="quant-btn" id="minus-btn">-</button>
+                                </div>
+                            </div>
+                        </div> <!-- Product#3 CLOSED !!! -->
+
+                        <!-- Separate products: -->
+                        <div class="sep"></div>
+
+                        <!-- Procuct#4 -->
+                        <div class="product-field">
+                            <!-- Product image: -->
+                            <div class="product-image">
+                                <img src="assets/images/casio-bracelet-blk.jpeg" alt="Product-Casio-Green">
+                            </div>
+                            <!-- Product details: -->
+                            <div class="product-details">
+                                <p class="product-title">Casio Replacement Bracelet</p>
+                                <p class="subtitle-title">Mountaineer Velcro</p>
+                            </div>
+                            <!-- Product price and quantity: -->
+                            <div class="product-price-quant">
+                                <p class="price">$9.99</p>
+                                <!-- + & - -->
+                                <div class="product-quantity">
+                                    <button class="quant-btn" id="plus-btn">+</button>
+                                    <input type="number" name="quantity" id="product-quantity" value="1">
+                                    <button class="quant-btn" id="minus-btn">-</button>
+                                </div>
+                            </div>
+                        </div> <!-- Product#4 CLOSED !!! -->
+
+                        <!-- Separate products: -->
+                        <div class="sep"></div>
+
+                        <div class="total-part">
+                            <p class="product-title">Total:</p>
+                            <p class="price">$606.99</p>
                         </div>
-                
-                    </div> <!-- PAYMENT INFO FIELD CLOSED!!! -->
-                </div>  <!-- PAYMENT CLOSED!!! --> 
-            </form> <!-- FORM CLOSED!!! -->        
-        </div> <!-- SHIPPING AND PAYMENT ROW CLOSED!!! --> 
+                    </div> <!-- FIELD WITH PRODUCTS CLOSED !!! -->
+                </div> <!-- SPACE USED BY CART CLOSED !!! -->
+
+
+        
+            </div> <!-- CONTAINER FOR PRODUCT OVERVIEW CLOSED!!! -->
+        </div> <!-- MAIN ROW CLOSED!!! -->
     </main>
     
     <!-- Footer &copy;: -->
