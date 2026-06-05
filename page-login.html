@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap&family=Raleway:ital,wght@0,100..900;1,100..900" rel="stylesheet">
     <!-- Favicon: -->
-    <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/svg">
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/svg">
 </head>
 <body>
     <!-- Header: -->
@@ -29,19 +29,19 @@
         <div class="row align-items-center justify-content-lg-between">
             <!-- Header logo: -->
             <div class="col-12 d-block d-lg-none">
-                <a href="index.html"><img class="header-logo" src="assets/images/moderetro-logo.svg" alt="Company logo"></a>
+                <a href="index.html"><img class="header-logo" src="images/moderetro-logo.svg" alt="Company logo"></a>
             </div>
             <div class="col-lg-2 d-none d-lg-block">
-                <a href="index.html"><img class="header-logo" src="assets/images/moderetro-top.svg" alt="Company logo"></a>
+                <a href="index.html"><img class="header-logo" src="images/moderetro-top.svg" alt="Company logo"></a>
             </div>
             <!-- Header navigation: -->
             <div class="col-12 col-lg-3">
                 <nav class="header-nav">
                     <ul>
-                        <li><a class="header-nav-link" href="index.html" target="_blank">Home</a></li>
-                        <li><a class="header-nav-link" href="page-product.html" target="_blank">Shop</a></li>
-                        <li><a class="header-nav-link" href="#" target="_blank">Gallery</a></li>
-                        <li><a class="header-nav-link" href="#" target="_blank">About</a></li>
+                        <li><a class="header-nav-link" href="index.html" target="_self">Home</a></li>
+                        <li><a class="header-nav-link" href="page-product.html" target="_self">Shop</a></li>
+                        <li><a class="header-nav-link" href="#" target="_self">Gallery</a></li>
+                        <li><a class="header-nav-link" href="#" target="_self">About</a></li>
                     </ul>
                 </nav>
             </div>
@@ -71,7 +71,7 @@
     </header>
 
     <!-- Separator -->
-    <div class="sep" style="margin-bottom: 0;"></div>
+    <div class="sep mb-0"></div>
 
     <!-- Main content: -->
     <main class="container login-main">
@@ -83,13 +83,13 @@
             <!-- Login field: -->
             <div class="col-11 col-md-7 col-lg-5 login-field">
                 <!-- Form: -->
-                <form action="#" method="post">
+                <!-- <form action="#" method="get"> -->
                     <!-- Inputs: -->
                     <div class="login-input">
                         <label>
                             E-mail:
-                            <input class="login-field-input" type="email" name="user-email" id="login-email"
-                            placeholder="Enter your e-mail address" required>
+                            <input class="login-field-input" type="text" name="user-email" id="login-email"
+                            placeholder="Enter your e-mail address" required> <!-- Promenjen type u "text" zbog potrebe zadatka -->
                         </label>
                     </div>
                     <div class="login-input">
@@ -109,11 +109,11 @@
                         <span class="fgt-psw"><a href="#">Forgot password?</a></span>
                     </div>
                     <!-- Button: -->
-                    <button class="login-btn" type="submit">Login</button>
+                    <button class="login-btn" type="button" onclick="loginAlert()">Login</button>
                     <!-- Create account prompt: -->
                     <p class="create-acc">New modder? Register <a href="#" target="_blank">here</a>!</p>
 
-                </form>
+                <!-- </form> -->
             </div>
         </div>
     </main>
@@ -169,20 +169,21 @@
         <!-- Social media: -->
         <div class="footer-social-media">
             <a class="footer-soc-link" href="https://facebook.com" target="_blank"">
-                <img src="assets/images/icon-facebook.svg" alt="Facebook link">
+                <img src="images/icon-facebook.svg" alt="Facebook link">
             </a>
             <a class="footer-soc-link" href="https://instagram.com" target="_blank">
-                <img src="assets/images/icon-instagram.svg" alt="Instagram link">
+                <img src="images/icon-instagram.svg" alt="Instagram link">
             </a>
             <a class="footer-soc-link" href="https://tiktok.com" target="_blank">
-                <img src="assets/images/icon-tiktok.svg" alt="Tiktok link">
+                <img src="images/icon-tiktok.svg" alt="Tiktok link">
             </a>
         </div>
         <!-- Copyright msg: -->
         <p class="footer-copyright-msg">&copy;All rights reserved. Developed by <a class="footer-soc-link" href="https://github.com/d-jlvc" target="_blank">j-lvc</a>.</p>
     </footer>
 
-    <!-- Bootstrap jS import: -->
+    <!-- Bootstrap jS and main.js import: -->
     <script src="./scripts/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

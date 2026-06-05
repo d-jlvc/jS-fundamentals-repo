@@ -4,11 +4,11 @@ Hello! This is an e-commerce project simulating a business. I am presenting my f
 Following information will present project structure.
 
 ```
-    assets/images: containing assets like fonts, images, etc.
+    images: containing assets like fonts, images, etc.
     css: containing styling and bootstrap (may be removed later, 
          kept it so project would be rdy for use)
-    scripts: jS files (scripts.js and bootstrap which I, also
-             kept so project would be rdy for use.)
+    scripts: bootstrap which I, also kept so project would be rdy for use.
+    js: folder containing main.js script.
     
     - LICENSE: github license
     - README.md: which is this you're reading...
@@ -19,6 +19,9 @@ Following information will present project structure.
     
 ```
 ### --2. Versions and dates:
+
+03/06/ - Finished coupon and product value fucntionalities. Finished stock check function. 
+26/05/ - Added some functionalities in each page. Learning jS for the first time.
 19/04/ - Finished with creating and styling pages. They are ready for jS course continuation. Should
          reduce number of lines of code in style.css, but that is a mission for another time. Still learning!!!
 18/04/ - Finished 2/3 of the project, will follow up tomorrow with completion.

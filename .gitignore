@@ -1,0 +1,6 @@
+00-pdf/
+00-tasks/
+
+# Standards:
+.env
+.DS_Store

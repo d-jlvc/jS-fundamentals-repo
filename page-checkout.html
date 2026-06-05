@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap&family=Raleway:ital,wght@0,100..900;1,100..900" rel="stylesheet">
     <!-- Favicon: -->
-    <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/svg">
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/svg">
 </head>
 <body>
     <!-- Header: -->
@@ -29,19 +29,19 @@
         <div class="row align-items-center justify-content-lg-between">
             <!-- Header logo: -->
             <div class="col-12 d-block d-lg-none">
-                <a href="index.html"><img class="header-logo" src="assets/images/moderetro-logo.svg" alt="Company logo"></a>
+                <a href="index.html"><img class="header-logo" src="images/moderetro-logo.svg" alt="Company logo"></a>
             </div>
             <div class="col-lg-2 d-none d-lg-block">
-                <a href="index.html"><img class="header-logo" src="assets/images/moderetro-top.svg" alt="Company logo"></a>
+                <a href="index.html"><img class="header-logo" src="images/moderetro-top.svg" alt="Company logo"></a>
             </div>
             <!-- Header navigation: -->
             <div class="col-12 col-lg-3">
                 <nav class="header-nav">
                     <ul>
-                        <li><a class="header-nav-link" href="index.html" target="_blank">Home</a></li>
-                        <li><a class="header-nav-link" href="page-product.html" target="_blank">Shop</a></li>
-                        <li><a class="header-nav-link" href="#" target="_blank">Gallery</a></li>
-                        <li><a class="header-nav-link" href="#" target="_blank">About</a></li>
+                        <li><a class="header-nav-link" href="index.html" target="_self">Home</a></li>
+                        <li><a class="header-nav-link" href="page-product.html" target="_self">Shop</a></li>
+                        <li><a class="header-nav-link" href="#" target="_self">Gallery</a></li>
+                        <li><a class="header-nav-link" href="#" target="_self">About</a></li>
                     </ul>
                 </nav>
             </div>
@@ -99,13 +99,13 @@
                             <!-- User name and surname div: -->
                             <div class="name-input">
                                 <!-- Name: -->
-                                <label class="">
+                                <label>
                                     First name:
                                     <input class="input-field" type="text" 
                                     name="first-name" id="first-name" required>
                                 </label>
                                 <!-- Surname: -->
-                                <label class="">
+                                <label>
                                     Last name:
                                     <input class="input-field" type="text" 
                                     name="last-name" id="last-name" required>
@@ -178,10 +178,10 @@
                             <!-- Buttons div: -->
                             <div class="payment-btns">
                                 <a class="btn-1 btn-pay" href="https://paypal.com" target="_blank">
-                                    <img src="assets/images/icon-paypal.png" alt="">
+                                    <img src="images/icon-paypal.png" alt="Paypal Button Logo">
                                 </a>
                                 <a class="btn-1 btn-pay" href="#" target="_blank">
-                                    <img src="assets/images/icon-cash.png" alt="">
+                                    <img src="images/icon-cash.png" alt="Cash Payment Button Logo">
                                 </a>
                             </div>
                             <!-- Cardholder name: -->
@@ -268,7 +268,7 @@
                         <div class="product-field">
                             <!-- Product image: -->
                             <div class="product-image">
-                                <img src="assets/images/casio-blue.jpeg" alt="Product-Casio-Blue">
+                                <img src="images/casio-blue.jpeg" alt="Product-Casio-Blue">
                             </div>
                             <!-- Product details: -->
                             <div class="product-details">
@@ -294,7 +294,7 @@
                         <div class="product-field">
                             <!-- Product image: -->
                             <div class="product-image">
-                                <img src="assets/images/casio-orange.jpeg" alt="Product-Casio-Orange">
+                                <img src="images/casio-orange.jpeg" alt="Product-Casio-Orange">
                             </div>
                             <!-- Product details: -->
                             <div class="product-details">
@@ -320,7 +320,7 @@
                         <div class="product-field">
                             <!-- Product image: -->
                             <div class="product-image">
-                                <img src="assets/images/casio-green.jpeg" alt="Product-Casio-Green">
+                                <img src="images/casio-green.jpeg" alt="Product-Casio-Green">
                             </div>
                             <!-- Product details: -->
                             <div class="product-details">
@@ -346,7 +346,7 @@
                         <div class="product-field">
                             <!-- Product image: -->
                             <div class="product-image">
-                                <img src="assets/images/casio-bracelet-blk.jpeg" alt="Product-Casio-Green">
+                                <img src="images/casio-bracelet-blk.jpeg" alt="Product-Casio-Green">
                             </div>
                             <!-- Product details: -->
                             <div class="product-details">
@@ -372,6 +372,17 @@
                             <p class="product-title">Total:</p>
                             <p class="price">$606.99</p>
                         </div>
+
+                        <!-- Separate PromoCode: -->
+                        <div class="sep"></div>
+
+                        <!-- TASK2: PromoCode Update: -->
+                        <div class="total-part flex-column">
+                            <input class="m-2" type="text" name="promoCode" id="promo-input"
+                            placeholder="Add promo code:">
+                            <button class="m-2" onclick="validateAndNotify()">Apply</button>
+                        </div>
+
                     </div> <!-- FIELD WITH PRODUCTS CLOSED !!! -->
                 </div> <!-- SPACE USED BY CART CLOSED !!! -->
 
@@ -432,20 +443,21 @@
         <!-- Social media: -->
         <div class="footer-social-media">
             <a class="footer-soc-link" href="https://facebook.com" target="_blank"">
-                <img src="assets/images/icon-facebook.svg" alt="Facebook link">
+                <img src="images/icon-facebook.svg" alt="Facebook link">
             </a>
             <a class="footer-soc-link" href="https://instagram.com" target="_blank">
-                <img src="assets/images/icon-instagram.svg" alt="Instagram link">
+                <img src="images/icon-instagram.svg" alt="Instagram link">
             </a>
             <a class="footer-soc-link" href="https://tiktok.com" target="_blank">
-                <img src="assets/images/icon-tiktok.svg" alt="Tiktok link">
+                <img src="images/icon-tiktok.svg" alt="Tiktok link">
             </a>
         </div>
         <!-- Copyright msg: -->
         <p class="footer-copyright-msg">&copy;All rights reserved. Developed by <a class="footer-soc-link" href="https://github.com/d-jlvc" target="_blank">j-lvc</a>.</p>
     </footer>
 
-    <!-- Bootstrap jS import: -->
+    <!-- Bootstrap jS  and main.js import: -->
     <script src="./scripts/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
